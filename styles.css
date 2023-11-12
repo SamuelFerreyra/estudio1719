@@ -1,0 +1,327 @@
+body{
+    margin: 0;
+}
+h1,h3,h4,h5,li,label,input{
+    font-family: 'Roboto', sans-serif;
+}
+h1{
+    color: #01ADB5;
+    font-size: 4.5rem;
+    margin: 3rem 0 3rem 0;
+}
+h2{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.2rem;
+    font-weight: 500;
+}
+h3,li{
+    font-size: 1.7rem;
+    font-weight:400;
+    margin: 0;
+}
+h4{
+    font-size: 1.2rem; 
+    font-weight: 300;
+    margin: 0; 
+}
+h5{
+    font-size: 1.1rem; 
+    font-weight: bold;
+    margin: 0;
+}
+@media only screen and (min-width : 1601px) {
+    :root{
+        font-size: 15px
+    }
+}
+@media only screen and (max-width : 1600px) {
+    :root{
+        font-size: 13px
+    }
+}
+@media only screen and (max-width : 1300px) {
+    :root{
+        font-size: 11px
+    }
+}
+@media only screen and (max-width : 1000px) {
+    :root{
+        font-size: 9px
+    }
+}
+@media only screen and (max-width : 700px) {
+    :root{
+        font-size: 7px
+    }
+}
+@media only screen and (max-width : 480px) {
+    :root{
+        font-size: 5px
+    }
+}
+@media only screen and (max-width : 320px) {
+    :root{
+        font-size: 4px
+    }
+}
+header,nav,#navlinks, header div, #socials, #welcome, #welcome div, #area1, .area1card, .tercio div, footer, .tercio:nth-child(3),#contactf, .divimg{
+    display: flex;
+}
+nav, #welcome, #welcome div{
+    align-items: center;
+}
+#welcome, #welcome div{
+    flex-direction: column;
+}
+header, a, h2{
+    color: #EEEEEE;
+}
+header{
+    background-color: #222831;
+    gap: 3%;
+    justify-content: center;
+    padding: 0.9rem;
+    font-size: 1.8rem;
+}
+header div{
+    gap: 1rem;
+}
+nav{
+    justify-content: space-around;
+    background-color: #393E46;
+    padding: 1rem;
+}
+a{
+    text-decoration: none;
+}
+#navlinks{
+    gap: 5rem;
+    margin: 0 15rem 0 15rem;
+}
+#navlinks a::after{
+    content: '';
+    display: block;
+    width: 0;
+    height: 4px;
+    background: #01ADB5;
+    transition: width .3s;
+}
+#navlinks a{
+    border-bottom: solid 0px #01ADB5;
+    transition: border-width 0.3s linear;
+}
+#navlinks a:hover::after {
+    width: 100%;
+}
+#socials i{
+    font-size: 2.5rem;
+}
+#socials{
+    gap: 2rem;
+}
+#welcome h2{
+    margin: 0.3rem;
+}
+#welcome, #wcimg{
+    height: 64.5rem;
+}
+#wcimg{
+    width: 100%;
+    position: absolute;
+    z-index: 0;
+}
+#welcome div{
+    z-index: 1;
+    width: 100vw;
+    padding-top: 5%;
+}
+#logonav{
+    height: 4rem;
+}
+#logowc{
+    height: 20rem;
+}
+#area1{
+    padding: 1.5rem;
+}
+.area1img{
+    width: 28rem;
+}
+.area1card{
+    gap: 1rem;
+}
+.area1card h2{
+    font-weight: bold;
+    color: black;
+    text-align: center;
+}
+#area2{
+    background-color: black;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+    padding: 2rem;
+}
+#area2 div{
+    height: 25rem;
+}
+#area2 h2, #area2 li{
+    font-size: 2.2rem;
+    color: white;
+}
+#area2 h2{
+    margin: 0.4rem 0 2rem 0;
+    text-align: center;
+    font-weight: bold;
+}
+#area2 li{
+    font-weight: 400;
+}
+#area2 div:nth-child(1){
+    background-image: url('img/4.jpg');
+    background-size:cover;
+}
+#area2 div:nth-child(2){
+    background-image: url('img/5.jpg');
+    background-size:cover;
+}
+#area2 div:nth-child(3){
+    background-image: url('img/6.jpg');
+    background-size:cover;
+}
+#area2 div:nth-child(4){
+    background-image: url('img/7.jpg');
+    background-size:cover;
+}
+#area2 div:nth-child(5){
+    background-image: url('img/8.jpg');
+    background-size:cover;
+}
+#area2 div:nth-child(6){
+    background-image: url('img/9.jpg');
+    background-size:cover;
+}
+footer{
+    justify-content: space-between;
+    padding: 1.5rem 5rem 3rem 1.5rem ;
+    gap: 2rem;
+    background-color: #EEEEEE;
+}
+.tercio a{
+    color: black;
+}
+.tercio:nth-child(1){
+    margin-top: 2rem;
+}
+.tercio img{
+    width: 15rem;
+    margin-right: 50rem;
+}
+.tercio:nth-child(2){
+    padding-right: 10rem;
+    border-right: 2px solid #01ADB5;
+}
+.tercio div{
+    margin: 0.5rem 0 0.5rem 0;
+    gap: 0.5rem;
+}
+.tercio i{
+    font-size: 1.5rem;
+}
+.tercio:nth-child(3){
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+.tercio:nth-child(3), .divimg{
+    justify-content: center;
+}
+
+/* Contacto */
+
+#contactf{
+    background-color: #222831;
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem;
+    gap: 1rem;
+}
+#contactf h3{
+    color: #EEEEEE;
+}
+#contactf div{
+    margin: 1rem 0 1rem 0;
+}
+form {
+    width: 80%;
+    max-width: 400px;
+    margin: 2rem 0;
+}
+
+label, input, select, textarea {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input[type="text"], input[type="email"], input[type="tel"], select, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button {
+    background-color: #01ADB5;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #F0F0E8;
+    color: #242424 ;
+}
+
+input:invalid, select:invalid, textarea:invalid {
+    border-color: red;
+}
+
+input:valid, select:valid, textarea:valid {
+    border-color: #ccc;
+}
+label{
+    color: #EEEEEE;
+    font-size: 1.2rem
+}
+
+/* Paginas especificas, formato común */
+
+.jc{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+    padding: 3rem;
+}
+.jc img{
+    height: 20rem;
+}
+.jc>div{
+    padding: 1rem 2rem;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 1.5rem;
+}
+.jc>div:hover{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+.jc h3, .jc ul{
+    margin-top: 2rem;
+    margin-left: 3rem;
+    margin-right: 2rem;
+}
+.jc h3{
+    font-weight: bold;
+}
