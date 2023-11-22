@@ -8,30 +8,32 @@ h1{
     color: #01ADB5;
     font-size: 4.5rem;
     margin: 3rem 0 3rem 0;
+    text-shadow: 2px 2px 3px black;
 }
 h2{
     font-family: 'Montserrat', sans-serif;
     font-size: 2.2rem;
     font-weight: 500;
 }
+
 h3,li{
     font-size: 1.7rem;
     font-weight:400;
     margin: 0;
 }
 h4{
-    font-size: 1.2rem; 
+    font-size: 1.4rem; 
     font-weight: 300;
     margin: 0; 
 }
 h5{
-    font-size: 1.1rem; 
+    font-size: 1.4rem; 
     font-weight: bold;
     margin: 0;
 }
 @media only screen and (min-width : 1601px) {
     :root{
-        font-size: 15px
+        font-size: 11px
     }
     #area2{
         background-color: black;
@@ -58,11 +60,28 @@ h5{
     }
     .jc{
         grid-template-columns: 1fr 1fr 1fr;
+    }
+    #welcome h2{
+        width: 100rem;
+        text-align: center;
+    }
+    #contactf{
+        background-color: #222831;
+        padding: 5rem 2rem 15rem 2rem;
+        gap: 2rem;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    #contactf div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 }
 @media only screen and (max-width : 1600px) {
     :root{
-        font-size: 13px
+        font-size: 11px
     }
     #area2{
         background-color: black;
@@ -90,10 +109,31 @@ h5{
     .jc{
         grid-template-columns: 1fr 1fr 1fr;
     }
+    #welcome h2{
+        width: 90rem;
+        text-align: center;
+    }
+    #welcome h1{
+        width: 70rem;
+        text-align: center;
+    }
+    #contactf{
+        background-color: #222831;
+        padding: 5rem 2rem 15rem 2rem;
+        gap: 2rem;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    #contactf div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }
 @media only screen and (max-width : 1300px) {
     :root{
-        font-size: 12px
+        font-size: 10px
     }
     #navlinks{
         gap: 2rem;
@@ -110,31 +150,65 @@ h5{
     .jc{
         grid-template-columns: 1fr 1fr;
     }
+    #contactf{
+        padding: 5rem 2rem 20rem 2rem;
+    }
 }
 @media only screen and (max-width : 1000px) {
     :root{
-        font-size: 10px
+        font-size: 9px
     }
     
     #area2{
         grid-template-columns: 1fr 1fr;
     }
-    
+    .jc{
+        grid-template-columns: 1fr 1fr;
+    }
+    #contactf{
+        flex-direction: column;
+        align-items: center;
+    }
     
 }
 @media only screen and (max-width : 700px) {
     :root{
-        font-size: 7px
+        font-size: 8px
+    }
+    header{
+        flex-wrap: wrap;
+    }
+    #welcome h2{
+        width: 50rem;
+    }
+    #welcome h1{
+        width: 55rem;
+        text-align: center;
+    }
+    #area2{
+        grid-template-columns: 1fr;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    #area2 div{
+        width: 40rem;
+    }
+    .jc{
+        grid-template-columns: 1fr;
     }
 }
 @media only screen and (max-width : 480px) {
+    body{
+        padding: 0;
+    }
     :root{
-        font-size: 5px
+        font-size: 7px
     }
     nav div:first-of-type{
         display: none;
     }
-    
     #area2 div{
         height: 30rem;
     }
@@ -144,12 +218,13 @@ h5{
     #navlinks{
         margin: 0;
     }
-    
-}
-@media only screen and (max-width : 320px) {
-    :root{
-        font-size: 4px
+    #area2{
+        grid-template-columns: 1fr;
     }
+    #area1{
+        padding: 2rem;
+    }
+    
 }
 header,nav,#navlinks, header div, #welcome, #welcome div, #area1, .area1card, .tercio div, footer, .tercio:nth-child(3),#contactf, .divimg{
     display: flex;
@@ -209,6 +284,7 @@ a{
 }
 #welcome h2{
     margin: 0.3rem;
+    text-shadow: 2px 2px 3px black;
 }
 #welcome div{
     padding-top: 5%;
@@ -217,7 +293,7 @@ a{
     height: 4rem;
 }
 #logowc{
-    height: 20rem;
+    height: 16rem;
 }
 .area1img{
     width: 28rem;
@@ -231,41 +307,42 @@ a{
     text-align: center;
 }
 
-
+#area2 div{
+    padding: 2rem;
+}
 #area2 h2, #area2 li{
     font-size: 2.2rem;
     color: white;
 }
 #area2 h2{
-    margin: 0.4rem 0 2rem 0;
-    text-align: center;
+    margin: 0.4rem 1rem 2rem 1rem;
     font-weight: bold;
 }
 #area2 li{
     font-weight: 400;
 }
 #area2 div:nth-child(1){
-    background-image: url('img/4.jpg');
+    background-image: url('img/4.webp');
     background-size:cover;
 }
 #area2 div:nth-child(2){
-    background-image: url('img/5.jpg');
+    background-image: url('img/5.webp');
     background-size:cover;
 }
 #area2 div:nth-child(3){
-    background-image: url('img/6.jpg');
+    background-image: url('img/6.webp');
     background-size:cover;
 }
 #area2 div:nth-child(4){
-    background-image: url('img/7.jpg');
+    background-image: url('img/7.webp');
     background-size:cover;
 }
 #area2 div:nth-child(5){
-    background-image: url('img/8.jpg');
+    background-image: url('img/8.webp');
     background-size:cover;
 }
 #area2 div:nth-child(6){
-    background-image: url('img/9.jpg');
+    background-image: url('img/9.webp');
     background-size:cover;
 }
 footer{
@@ -305,12 +382,11 @@ footer{
 
 /* Contacto */
 
-#contactf{
-    background-color: #222831;
-    flex-direction: column;
-    align-items: center;
-    padding: 3rem;
-    gap: 1rem;
+input, textarea{
+    width: 90%;
+}
+select{
+    width: 95%;   
 }
 #contactf h3{
     color: #EEEEEE;
@@ -330,7 +406,6 @@ label, input, select, textarea {
 }
 
 input[type="text"], input[type="email"], input[type="tel"], select, textarea {
-    width: 100%;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
@@ -367,14 +442,14 @@ label{
 
 .jc{
     display: grid;
-    gap: 2rem;
-    padding: 3rem;
+    gap: 6rem;
+    padding: 4rem;
 }
 .jc img{
-    height: 20rem;
+    width: 100%;
 }
 .jc>div{
-    padding: 1rem 2rem;
+    padding: 2rem;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
     border-radius: 1.5rem;
@@ -384,8 +459,8 @@ label{
 }
 .jc h3, .jc ul{
     margin-top: 2rem;
-    margin-left: 3rem;
-    margin-right: 2rem;
+    margin-left: 0;
+    margin-right: 1rem;
 }
 .jc h3{
     font-weight: bold;
